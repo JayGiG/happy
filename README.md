@@ -1,11 +1,17 @@
+<div align="center" >
+
+[![Linkedin Badge](https://img.shields.io/badge/-Janiele%20Nogueira-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/janiele-nogueira/)](https://www.linkedin.com/in/janiele-nogueira/)
+
+
+</div >
+
 <p align="center">
       <img src="https://user-images.githubusercontent.com/59374587/95769432-3c361a00-0c8e-11eb-8ce7-9ee9a66f32af.png" width="10%" alt="Happy Logo"/>
 </p>
 
 ---
 
-<h1 align="center">Next Level Week_3.0
- projeto "Happy". </h1>
+<h1 align="center">HAPPY - NLW_3.0 </h1>
 
 ---
 
@@ -131,11 +137,4 @@ $ git push origin my-feature
 
 
 ---
-    
-   <div align="center">
-
-[![Linkedin Badge](https://img.shields.io/badge/-Janiele%20Nogueira-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/janiele-nogueira/)](https://www.linkedin.com/in/janiele-nogueira/)
-
-
-
-   </div>
+  
