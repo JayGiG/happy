@@ -96,8 +96,7 @@ $ npm install
 - Execute a aplicação:
 $ npm start
 
-- Abra o seu navegador com o seguinte endereço:
-http://localhost:5500/
+
 ```
 
 ---
@@ -122,13 +121,13 @@ $ git push origin my-feature
 <h2 align="center">Licença 📝</h2>
 
 <p align="center">
-   Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/JayGiG/happy/new/master"> LICENSE </a> para mais detalhes. 😉
+   Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/JayGiG/happy/blob/master/LICENSE"> LICENSE </a> para mais detalhes. 😉
 </p>
 
 ---
 
 
-> Este projeto foi desenvolvido com ❤️ por **[@Janiele Nogueira](https://www.linkedin.com/in/janiele-nogueira/)**, com a orientação do mestre **[@MaykBrito](https://github.com/maykbrito)**💜. <br>
+> Este projeto foi desenvolvido com ❤️ por **[@Janiele Nogueira](https://www.linkedin.com/in/janiele-nogueira/)**, com a orientação do mestre [@MaykBrito](https://github.com/maykbrito). <br>
 
 
 ---
