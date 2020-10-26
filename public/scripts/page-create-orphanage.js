@@ -6,7 +6,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 // icon
 const icon = L.icon({
-  iconUrl: "/images/map-marker.svg",
+  iconUrl: "/public/images/map-marker.svg",
   iconSize: [58, 68],
   iconAnchor: [29, 68],
 });
@@ -14,6 +14,7 @@ const icon = L.icon({
 let marker;
 
 // create and add marker
+//Quando clicar no mapa
 map.on("click", (event) => {
   const lat = event.latlng.lat;
   const lng = event.latlng.lng;
@@ -28,30 +29,30 @@ map.on("click", (event) => {
   marker = L.marker([lat, lng], { icon }).addTo(map);
 });
 
-// add photos field
+// adicionar  campos de fotos
 function addPhotoField() {
-  // take photos container
+  // pegar containers de fotos
   const container = document.querySelector("#images");
 
-  // take container for duplicate
+  // pegar o container para duplicar
   const fieldsContainer = document.querySelectorAll(".new-upload");
 
-  // clone the last selected image
+  // clonar a proxima imagem selecionada
   const newFieldContainer = fieldsContainer[
     fieldsContainer.length - 1
   ].cloneNode(true);
 
-  // check if the field is empty, if yes, do not add
+  // checar se o campo está vazio, se sim, não adicionar outro campo
   const input = newFieldContainer.children[0];
 
   if (input.value == "") {
     return;
   }
 
-  // clean field before adding images container
+  // limpar o campo antes de adicionar imagens ao container
   input.value = "";
 
-  // add clone to images container
+  // adicionar imagens clonadas ao container 
   container.appendChild(newFieldContainer);
 }
 
@@ -59,24 +60,24 @@ function deleteField(event) {
   const span = event.currentTarget;
   const fieldsContainer = document.querySelectorAll(".new-upload");
   if (fieldsContainer.length <= 1) {
-    // clean field value
+    // limpar valor do campo
     span.parentNode.children[0].value = "";
     return;
   }
 
-  // delete field
+  // deletar campo
   span.parentNode.remove();
 }
 
-// select yes or no
+//selecionar sim ou não
 function toggleSelect(event) {
-  // remove the .active class from the buttons
+  // remover a classe .active dos botoes
   document.querySelectorAll('.button-select button')
   .forEach(function (button) {
     button.classList.remove("active")
   })
 
-  // put the .active class on the clicked button
+  // inserir a classe active ao clicar nos botoes
   const button = event.currentTarget
   button.classList.add("active")
 
