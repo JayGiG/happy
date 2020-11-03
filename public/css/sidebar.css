@@ -21,13 +21,13 @@ aside.sidebar footer button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s;
+    transition: background-color 0.2s;
 }
 
 aside.sidebar footer button:hover{
     background: #17D6EB;
 }
 
-.white-sidebar{
+.width-sidebar{
     padding-left: 110px;
 }

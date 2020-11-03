@@ -19,11 +19,22 @@ const popup = L.popup({
     className: 'map-popup',
     minWidth: 240,
     minHeight: 240
-}).setContent('Lar das Meninas <a href= "orphanage?id=1" class="choose-orphanage"> <img src="/images/arrow-white.svg"> </a> ')
+}).setContent(`${name} <a href= "orphanage?id=${id}" class="choose-orphanage"> <img src="/images/arrow-white.svg"> </a> `)
 
 // Ponto de marcação
 L
 .marker([-3.7303142,-38.543164], { icon } )
 .addTo(map)
 .bindPopup(popup)
-    
+
+const orphanageSpan = documen.querySelectorAll(".orphanages span")
+orphanageSpan.forEach(span => {
+    const orphanage = {
+        id: span.dataset.id,
+        name: span.dataset.name,
+        lat: span.dataset.lat,
+        lng: span.dataset.lng
+    }
+
+    addMarker(orphanage)
+})
